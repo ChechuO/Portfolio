@@ -1,41 +1,83 @@
 <!doctype html>
 <html lang="es">
     <head>
-        <title>Pagina de Contacto</title>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="description" content="Portfolio personal de Jesus Olivar estudiante de desarrollo Fullstack" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home - Portfolio de Jesús Olivar Migueláñez</title>
+        <meta
+            name="description"
+            content="Portfolio personal de Jesús Olivar Migueláñez, estudiante de desarrollo Fullstack" />
+        <link rel="icon" href="https://res.cloudinary.com/pslzx5jd/image/upload/v1795026582/favicon.ico" sizes="32x32" />
         <link
             rel="icon"
-            type="image/x-icon"
-            href="https://res.cloudinary.com/pslzx5jd/image/upload/v1793211604/Dragon-minimalista_blanco.png" />
-        <meta name="author" content="Jesus Olivar" />
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/styles.css" />
+            href="https://res.cloudinary.com/pslzx5jd/image/upload/v1795026582/Dragon-minimalista_blanco_ico.svg"
+            type="image/svg+xml" />
+        <link
+            rel="apple-touch-icon"
+            href="https://res.cloudinary.com/pslzx5jd/image/upload/v1795026837/apple-touch-icon.png" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/variables.css" />
+        <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
         <header>
-            <div class="header-content container">
+            <div class="header">
                 <a href="index.html"
                     ><img
-                        id="logo-jesus"
-                        src="https://res.cloudinary.com/pslzx5jd/image/upload/v1793211604/Dragon-minimalista_blanco.png"
-                        alt="logo" />
-                </a>
+                        id="logo-header"
+                        src="https://res.cloudinary.com/pslzx5jd/image/upload/v1795026582/Dragon-minimalista_blanco_ico.svg"
+                        alt="logo"
+                /></a>
                 <nav class="nav-header">
                     <ul class="nav-header-list">
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#cheatsheets">Cheatsheets</a></li>
-                        <li><a href="#recursos">Recursos</a></li>
+                        <li><a href="index.html#skills">Skills</a></li>
+                        <li><a href="index.html#cheatsheets">Cheatsheets</a></li>
+                        <li><a href="index.html#recursos">Recursos</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
-                <div class="hamburger">
+                <button class="dark-mode-toggle" id="darkModeToggle" type="button" aria-label="Cambiar modo oscuro">
+                    <svg
+                        class="sun-icon"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        style="display: block">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg
+                        class="moon-icon"
+                        style="display: none"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menú">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </header>
         <main>
