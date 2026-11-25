@@ -7,10 +7,6 @@
     --success: #27ae60;
     --background: #d4d4d4;
 
-    /* Colores principales dark */
-    --primary-d: #d4d4d4;
-    --background-d: #121212;
-
     /* Colores neutros */
     --dark: #1a1a1a;
     --grey-dark: #34495e;
@@ -68,4 +64,9 @@
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
     --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.4);
     --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+/* Modo oscuro*/
+:root[data-theme='oscuro'] {
+    --primary: #d4d4d4;
+    --background: #121212;
 }
