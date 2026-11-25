@@ -2,10 +2,12 @@
     /* Colores principales */
     --primary: #2b2b2b;
     --secondary: #e74c3c;
+    --reduced: #4f5c5d;
     --accent: #3498db;
     --highlight: #f39c12;
     --success: #27ae60;
     --background: #d4d4d4;
+    --background-top: #c4c4c4;
 
     /* Colores neutros */
     --dark: #1a1a1a;
@@ -69,4 +71,6 @@
 :root[data-theme='oscuro'] {
     --primary: #d4d4d4;
     --background: #121212;
+    --background-top: #222222;
+    --reduced: #7f8c8d;
 }

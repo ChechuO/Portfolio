@@ -22,41 +22,44 @@
     <body>
         <header id="header"></header>
         <main>
-            <form action="#" method="POST">
-                <fieldset>
-                    <legend>Formulario de contacto</legend>
-                    <div>
+            <section class="container">
+                <h1>Contacto</h1>
+                <p class="comentario-contactos">
+                    Si tienes alguna sugerencia, duda o propuesta, rellena el formulario y me pondré en contacto contigo lo
+                    antes posible.
+                </p>
+                <form class="form-container" action="#" method="POST">
+                    <div class="form-group">
                         <label for="nombre">Nombre</label>
                         <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required />
                     </div>
 
-                    <div>
+                    <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Email" required />
+                        <input type="email" id="email" name="email" placeholder="email@email.com" required />
                     </div>
 
-                    <div>
+                    <div class="form-group">
                         <label for="asunto">Asunto</label>
-                        <input type="text" id="asunto" name="asunto" placeholder="Asunto" required />
+                        <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required />
                     </div>
 
-                    <div>
+                    <div class="form-group">
                         <label for="mensaje">Mensaje</label>
-                        <div>
-                            <textarea
-                                id="mensaje"
-                                name="mensaje"
-                                cols="40"
-                                rows="6"
-                                placeholder="Escribe tu mensaje aquí..."
-                                required></textarea>
-                        </div>
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            cols="40"
+                            rows="6"
+                            placeholder="Escribe tu mensaje aquí..."
+                            required></textarea>
                     </div>
-
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Reset</button>
-                </fieldset>
-            </form>
+                    <div class="form-btn">
+                        <button class="btn-submit" type="submit">Enviar</button>
+                        <button class="btn-reset" type="reset">↺</button>
+                    </div>
+                </form>
+            </section>
         </main>
         <footer id="footer"></footer>
         <script type="module" src="./js/main.js"></script>
